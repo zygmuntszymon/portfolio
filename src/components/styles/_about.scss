@@ -1,0 +1,66 @@
+@import './variables';
+
+.about {
+    position: absolute;
+    top: 100vh;
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    @include FlexCenter(center, column);
+    scroll-snap-align: start;
+
+    .about-container {
+        width: 60%;
+        height: 90%;
+        @include FlexCenter(center, column);
+
+        font-size: 1.3rem;
+    }
+
+    // .about-sign {
+    //     color: rgb(255, 255, 255);
+    //     font-style: italic;
+    //     font-weight: bold;
+    //     margin: 50px;
+    //     font-size: 2.2rem;
+    // }
+
+    .about-container-content-text {
+        text-align: justify;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40%;
+        max-width: 620px;
+        z-index: 99;
+    }
+
+    i {
+        font-size: 2rem;
+        margin: 15px;
+    }
+
+    .bg-text {
+        position: absolute;
+        font-weight: bold;
+        font-size: 10rem;
+        color: rgb(13, 13, 13);
+        z-index: 1;
+        letter-spacing: 5px;
+        margin-bottom: 50px;
+    }
+
+    .about-technologies {
+        z-index: 99;
+        margin-top: 100px;
+        position: absolute;
+        bottom: 150px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .bg-text {
+        font-size: 6rem !important;
+    }
+}

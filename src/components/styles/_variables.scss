@@ -1,0 +1,11 @@
+$primaryCol : rgb(0, 0, 0);
+$secondaryCol: rgb(122, 122, 122);
+$primaryFont: 'Montserrat',
+    sans-serif;
+
+@mixin FlexCenter($justify , $direction ) {
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+    flex-direction: $direction;
+}

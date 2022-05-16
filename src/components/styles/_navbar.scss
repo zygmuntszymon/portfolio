@@ -1,0 +1,178 @@
+@import './variables';
+
+.navbar {
+    z-index: 999;
+    height: 100px;
+    width: 100%;
+    @include FlexCenter(center, row);
+    position: fixed;
+    top: 0;
+    transition: all .3s;
+    animation: .8s ease-out 0s 1 slideInFromRight;
+
+    .navbar-container {
+        width: 80%;
+        @include FlexCenter(flex-end, row);
+
+        .navbar-buttons {
+            a {
+                margin: 15px;
+                display: inline-block;
+                position: relative;
+                font-size: 1.3rem;
+                font-weight: 500;
+                color: gray;
+
+                &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 0;
+                    top: 15px;
+                    height: 2px;
+                    left: 0;
+                    background-color: $secondaryCol;
+                    transition: all 0.4s ease-in 0s;
+                }
+
+                &:hover:after {
+                    width: 100%;
+                }
+            }
+
+            #contact-btn {
+                color: black;
+            }
+        }
+    }
+
+    &.transparent {
+        background: rgba(255, 255, 255, 0.93);
+        box-shadow: 0 8px 32px 0 rgba(144, 145, 150, 0.37);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        height: 65px;
+    }
+}
+
+.navbar-hamburger-box {
+    z-index: 999;
+    height: 50px;
+    width: 50px;
+    @include FlexCenter(center, row);
+    position: relative;
+    right: -1rem;
+    cursor: pointer;
+
+    .navbar-hamburger {
+        z-index: 999;
+        height: 3px;
+        width: 28px;
+        background-color: black;
+        position: absolute;
+        transition: all 1.2s;
+
+        &::after {
+            content: " ";
+            height: 3px;
+            width: 28px;
+            position: absolute;
+            top: 10px;
+            background-color: inherit;
+        }
+
+        &::before {
+            content: " ";
+            height: 3px;
+            width: 28px;
+            position: absolute;
+            top: -10px;
+            background-color: black;
+        }
+
+        &.active {
+            transform: rotate(720deg);
+            background: transparent;
+
+            &::before {
+                width: 30px;
+                transform: rotate(45deg) translate(7px, 7px);
+                background-color: white;
+            }
+
+            &::after {
+                width: 30px;
+                transform: rotate(-45deg) translate(7px, -7px);
+                background-color: white;
+            }
+        }
+    }
+
+
+}
+
+.mobile-menu {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform .4s;
+    transform-origin: top;
+    color: white;
+
+    @include FlexCenter(center, column);
+
+    a {
+        font-size: 1.5rem;
+        margin: 3rem;
+        opacity: 0;
+
+        &:after {
+            content: "";
+            display: block;
+            position: relative;
+            width: 0;
+            top: 15px;
+            height: 2px;
+            left: 0;
+            background-color: white;
+            transition: all .2s ease-in 0s;
+        }
+
+        &:hover:after {
+            width: 100%;
+        }
+
+        &.invisible {
+            transition: opacity 1.5s;
+            opacity: 0;
+        }
+
+        &.visible {
+            transition: opacity 1.5s;
+            opacity: 1;
+        }
+    }
+
+    &.opened {
+        transform: scaleY(1);
+    }
+
+    &.closed {
+        transform: scaleY(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
