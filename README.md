@@ -6,6 +6,9 @@
 * Framer Motion
 
 ## 🌐 Live Demo  
-[https://c-czoch.pl](https://c-czoch.pl)
+[https://szymonzygmunt.art/](https://szymonzygmunt.art/)
 
 ![Home Page](/screenshot.png)
+![Projects Page](/screenshot2.png)
+![About Page](/screenshot3.png)
+![Contact Page](/screenshot4.png)
