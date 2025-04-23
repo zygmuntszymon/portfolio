@@ -11,7 +11,7 @@ const Project = ({ index, src, title, href_github, href_live }) => {
       <h2>{title}</h2>
       <Image src={`/images/${src}`} width={1000} height={300} alt='project image' />
       <div>
-        <Link href={href_github}><FaGithub size={30} target='_blank'/></Link>
+        <Link href={href_github} target='_blank'><FaGithub size={30}/></Link>
         <Link href={href_live} className={href_live == "#" ? styles.disabled : undefined} target='_blank'><FaGlobe size={30} /></Link>
       </div>
     </div>

@@ -7,10 +7,10 @@ import Link from 'next/link'
 export default function page() {
     const projects = [
         {
-            title: "c-czoch",
-            href_github: "https://github.com/zygmuntszymon/c-czoch",
-            href_live: "https://c-czoch.pl/",
-            src: "cczoch.png",
+            title: "Begie Design",
+            href_github: "https://github.com/zygmuntszymon/begiedesign",
+            href_live: "https://begiedesign.netlify.app/",
+            src: "begiedesign.png",
             color: "#333"
         },
         {
@@ -21,10 +21,10 @@ export default function page() {
             color: "#333"
         },
         {
-            title: "Begie Design",
-            href_github: "#",
-            href_live: "#",
-            src: "staffmanager.png",
+            title: "c-czoch",
+            href_github: "https://github.com/zygmuntszymon/c-czoch",
+            href_live: "https://c-czoch.pl/",
+            src: "cczoch.png",
             color: "#333"
         }
     ]
