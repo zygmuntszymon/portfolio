@@ -25,12 +25,13 @@ export default function Page() {
                 >
                     <h1>WHO AM I?</h1>
                     <p>
-                        I'm a <strong>web developer</strong> from Nowy Sącz, Poland, focused on building websites that are not only functional but also inspiring and engaging.
+                        I'm a <strong>web developer</strong> from Nowy Sącz, Poland, currently based in Kraków. I focus on building websites that are not only functional but also inspiring and engaging.
                         I strive to create <strong>exceptional user experiences</strong> that blend design with performance.
                     </p>
                     <p>
                         Currently, I’m pursuing a degree in <strong>Computer Science</strong> at <strong>WSB-NLU</strong>, where I'm constantly expanding my skills and exploring new technologies.
                     </p>
+
 
                     <motion.div
                         className={styles.heroImageMobile}
