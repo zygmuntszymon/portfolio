@@ -7,6 +7,8 @@
 
 ## 🌐 Live Demo  
 [https://szymonzygmunt.art/](https://szymonzygmunt.art/)
+### alternative link
+[https://szymonzygmuntportfolio.netlify.app/](https://szymonzygmuntportfolio.netlify.app/)
 
 ![Home Page](/screenshot.png)
 ![Projects Page](/screenshot2.png)
