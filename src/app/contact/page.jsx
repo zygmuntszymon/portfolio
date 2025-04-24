@@ -154,11 +154,11 @@ export default function ContactPage() {
       >
         <motion.a
           variants={fadeInVariants}
-          href="mailto:szymonzygmuntszem@gmail.com"
+          href="mailto:szymonzygmuntzsem@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <IoMail /> szymonzygmuntszem@gmail.com
+          <IoMail /> szymonzygmuntzsem@gmail.com
         </motion.a>
 
         <motion.a
